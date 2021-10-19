@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "imageUrl": "https://i.ibb.co/7Jm88rM/photo-1581093436589-a10193587f96.jpg",
+        "sliderTitle": "hear is to your health",
+        "sliderText": "Nullam erat lectus, ullamcorper sed finibus ut, vulputate portitor diam nulla, iaculis neque sed enim efficitur pellentesque tellus turpis quis magna."
+    },
+    {
+        "id": 2,
+        "imageUrl": "https://i.ibb.co/tYWkzsM/photo-1583911860331-9fd6ce32c78f.jpg",
+        "sliderTitle": "the highest stan dards",
+        "sliderText": "Nullam erat lectus, ullamcorper sed finibus ut, vulputate portitor diam nulla, iaculis neque sed enim efficitur pellentesque tellus turpis quis magna."
+    },
+    {
+        "id": 3,
+        "imageUrl": "https://i.ibb.co/H4CtXph/photo-1615461066159-fea0960485d5.jpg",
+        "sliderTitle": "modern diagnostic",
+        "sliderText": "Nullam erat lectus, ullamcorper sed finibus ut, vulputate portitor diam nulla, iaculis neque sed enim efficitur pellentesque tellus turpis quis magna."
+    }    
+]

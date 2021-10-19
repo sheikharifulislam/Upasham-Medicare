@@ -1,0 +1,41 @@
+.single-doctor {
+  width: 22.5%;
+  height: 350px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.single-doctor-container {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.single-doctor-image {
+  width: 100%;
+  height: 50%;
+}
+
+.single-doctor-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.single-doctor-name h4 {
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.single-doctor-designation small {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+}

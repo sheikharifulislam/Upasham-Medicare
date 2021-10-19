@@ -1,0 +1,23 @@
+.most-popular-doctor-section {
+  margin-top: 50px;
+}
+
+.most-popular-doctor-title h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+}
+.most-popular-doctor-title hr {
+  width: 200px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: dodgerblue;
+}
+
+.all-most-popular-doctor {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}

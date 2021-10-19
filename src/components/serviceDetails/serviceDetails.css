@@ -1,0 +1,18 @@
+.service-details-section-title h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+}
+
+.service-details-section-title hr {
+  width: 200px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: dodgerblue;
+}
+
+.service-details-container {
+  margin-top: 20px;
+}

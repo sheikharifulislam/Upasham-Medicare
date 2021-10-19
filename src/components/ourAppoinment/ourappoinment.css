@@ -1,0 +1,117 @@
+input {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 2px solid #eee;
+  outline: none;
+}
+
+.our-appoinment-section {
+  margin-top: 50px;
+}
+
+.our-appoinmnet-title h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+}
+
+.our-appoinmnet-title hr {
+  width: 300px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: dodgerblue;
+}
+
+.appoinment-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.appoinment-image {
+  width: 40%;
+}
+
+.appoinment-image img {
+  width: 70%;
+}
+
+.appoinment-form {
+  width: 55%;
+  margin-left: 5%;
+}
+
+.appoinment-title {
+  margin-left: 80px;
+  text-transform: capitalize;
+  font-family: "Cormorant", serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.form-design {
+  margin-bottom: 10px;
+}
+
+#select-department,
+#select-doctor {
+  width: 200px;
+  padding: 7px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 2px solid #eee;
+  outline: none;
+  margin-right: 15px;
+}
+
+#select-city,
+#patient-email,
+#patient-phone-number,
+#patient-age,
+#patient-birthday,
+#patient-address {
+  width: 200px;
+  padding: 7px 0 7px 15px;
+  margin-right: 15px;
+}
+
+#patient-name {
+  width: 415px;
+  padding: 7px 0 7px 15px;
+}
+
+#gender-title,
+#appoinment-title {
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 7px;
+}
+
+#male,
+#female,
+#live-video-call,
+#chamber {
+  margin-right: 2px;
+}
+
+#gender-label,
+#appoinment-type {
+  margin-right: 15px;
+}
+
+.form-design input[type="submit"] {
+  padding: 13px 40px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: dodgerblue;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  outline: none;
+}

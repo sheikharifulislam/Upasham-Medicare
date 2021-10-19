@@ -1,0 +1,22 @@
+.all-doctors-section-title h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.all-doctors-section-title hr {
+  width: 200px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: dodgerblue;
+}
+
+.all-doctors {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
