@@ -1,121 +1,82 @@
-.all_information_list {
-  background-color: #000;
-  padding: 70px 0;
-  overflow: hidden;
-  margin-top: 100px;
+.footer-section {
+  background-color: #333;
+  margin-top: 150px;
+  padding: 40px 0;
+}
+.container-fluid {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.informatio_list {
-  width: 93%;
-  margin: 0 auto;
+.all-information-list {
   display: flex;
   justify-content: space-between;
 }
 
-.address {
+.some-description {
+  width: 30%;
+}
+
+.description-section-image img {
+  width: 100px;
+}
+
+.description-section-info p {
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  color: gray;
+  line-height: 30px;
+}
+
+.quick-links {
   width: 25%;
+}
+
+.quick-links h3 {
+  font-family: "Roboto Slab", serif;
   color: #fff;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
-.address h3 {
-  font-family: californian FB;
-  font-style: italic;
-  font-size: 25px;
-  margin-bottom: 10px;
+.quick-links li {
+  list-style: none;
 }
 
-.address i {
+.quick-links li a {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  text-decoration: none;
+  color: #eee;
+  margin-left: 15px;
+}
+
+.quick-links li a i {
+  color: dodgerblue;
   margin-right: 7px;
 }
 
-.address p {
-  font-family: Bell MT;
-  font-style: italic;
-  margin-bottom: 7px;
-  font-size: 19px;
-}
-
-.follow {
-  width: 22%;
-  color: #fff;
-  padding-left: 8px;
-}
-
-.follow h3 {
-  font-family: californian FB;
-  font-style: italic;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.follow a {
-  text-decoration: none;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border: 1.5px solid blue;
+.quick-links li hr {
+  width: 100%;
   background-color: #fff;
-  color: #000;
-  border-radius: 5px;
-  position: relative;
-  transition: 1s;
-}
-
-.follow a i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-}
-
-.follow a:hover {
-  background-color: #000;
-  color: #fff;
-  border: 4px solid blue;
-}
-
-.important-links {
-  width: 23.333333%;
-  color: #fff;
-  padding-left: 5px;
-}
-
-.important-links h3 {
-  font-family: californian FB;
-  font-style: italic;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.important-links a {
-  text-decoration: none;
-}
-
-.important-links a p {
-  font-family: Bell MT;
-  color: #fff;
-  font-style: italic;
-  margin-bottom: 7px;
-  font-size: 19px;
 }
 
 .subscribe-newsletter {
-  width: 23.333333%;
-  color: #fff;
-  padding-left: 5px;
+  width: 20%;
 }
 
 .subscribe-newsletter h3 {
-  font-family: californina FB;
-  font-style: italic;
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 .subscribe-newsletter input {
   display: block;
-  padding: 10px 50px 10px 7px;
+  padding: 10px 30px 10px 7px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -139,4 +100,77 @@
   border: 1px solid #eee;
   cursor: pointer;
   outline: none;
+}
+
+.get-us {
+  width: 20%;
+}
+
+.get-us h3 {
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.get-us p {
+  font-style: italic;
+  margin-bottom: 7px;
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+.get-us p i {
+  margin-right: 7px;
+}
+
+.get-us hr {
+  width: 100%;
+  color: #fff;
+}
+
+.get-us .flow-us a {
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  border: 1.5px solid blue;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  position: relative;
+  transition: 1s;
+}
+.get-us .flow-us a:nth-child(5n) {
+  margin-right: 0;
+}
+
+.get-us .flow-us a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.get-us .flow-us a:hover {
+  background-color: #000;
+  color: #fff;
+  border: 4px solid blue;
+}
+
+@media screen and (max-width: 840px) {
+  .all-information-list {
+    flex-direction: column;
+  }
+  .some-description,
+  .quick-links,
+  .subscribe-newsletter,
+  .get-us {
+    width: 100%;
+  }
 }

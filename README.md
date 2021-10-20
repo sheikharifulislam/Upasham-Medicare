@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Defodil-Technical-Institute](https://defodil-technical-institute.netlify.app/all-departments).
 
-1. it is a medical webisite
-2. you can see our service
-3. you can book an our service
+- It is a medical webiste
+  <br/>
+- You will find out about all our service and doctors
+  <br/>
+- You can book an appointment for the patient if you want

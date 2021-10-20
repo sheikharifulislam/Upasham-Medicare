@@ -3,7 +3,7 @@ import { useHistory, useLocation } from 'react-router';
 
 import useAuth from '../../customHook/useAuth';
 
-import './login.css';
+import './Register.css';
 
 const Login = () => {
 
@@ -50,7 +50,7 @@ const Login = () => {
 
 
     return (
-        <div className="w-25 m-5 mx-auto">
+        <div className="form-container">
             <div>
                 <h3 align="center">{alredyAcount ? 'Login' : 'Signup'} Form</h3>
                 <form className="row g-3" >

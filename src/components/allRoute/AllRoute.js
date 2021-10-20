@@ -12,10 +12,11 @@ import AllBlog from '../AllBlogs/AllBlog';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import Home from '../home/Home';
-import Login from '../login/Login';
+import Register from '../register/Register';
 import ServiceDetails from '../serviceDetails/ServiceDetails';
 import PrivateRoute from '../privateRoute/PrivateRoute';
 import Acount from '../acount/Acount';
+import NotFound from '../notFound/NotFound';
 
 const AllRoute = () => {
     return (
@@ -44,12 +45,15 @@ const AllRoute = () => {
                     <Route exact path="/about">
                         <AboutUs/>
                     </Route>
-                    <Route exact path="/login">
-                        <Login/>
+                    <Route exact path="/register">
+                        <Register/>
                     </Route>
-                    <PrivateRoute exact path="/login">
+                    <PrivateRoute exact path="/acount">
                         <Acount/>
                     </PrivateRoute>
+                    <Route exact path="*">
+                        <NotFound/>
+                    </Route>
                 </Switch>
                 <Footer/>
             </Router>

@@ -115,3 +115,32 @@ input {
   cursor: pointer;
   outline: none;
 }
+
+@media screen and (max-width: 480px) {
+  .appoinment-image {
+    display: none;
+  }
+  .appoinment-form {
+    width: 100%;
+  }
+
+  #select-department,
+  #select-doctor {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #select-city,
+  #patient-email,
+  #patient-phone-number,
+  #patient-age,
+  #patient-birthday,
+  #patient-address {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #patient-name {
+    width: 100%;
+  }
+}

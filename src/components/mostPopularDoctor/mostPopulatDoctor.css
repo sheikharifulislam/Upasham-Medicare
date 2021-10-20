@@ -21,3 +21,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 480px) {
+  .all-most-popular-doctor {
+    flex-direction: column;
+  }
+}

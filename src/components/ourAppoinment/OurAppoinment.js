@@ -7,7 +7,7 @@ const OurAppoinment = () => {
        <section className="our-appoinment-section">
            <div className="container">
                <div className="our-appoinmnet-title">
-                   <h1>book an appoinment for good helth</h1>
+                   <h1>book an appointment for good helth</h1>
                    <hr />
                </div>
                <div className="appoinment-container">
@@ -15,13 +15,12 @@ const OurAppoinment = () => {
                        <img src={appoinmentFormImage} alt="" />
                    </div>
                    <div className="appoinment-form">
-                       <h3 className="appoinment-title">book an appoinment</h3>                     
+                       <h3 className="appoinment-title">book an appointment</h3>                     
                        <form action="">
                             <div className="form-design">
                                <select name="" id="select-department">
                                    <option value="Select A Department">Select A Department</option>
-                                   <option value="General And Laparoscopic surgery">General And Laparoscopic surgery</option>
-                                   <option value=""></option>
+                                   <option value="General And Laparoscopic surgery">General And Laparoscopic surgery</option>                                  
                                </select>
                                <select name="" id="select-doctor">
                                     <option value="">Select Doctor</option>

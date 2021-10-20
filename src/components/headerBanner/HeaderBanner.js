@@ -1,50 +1,65 @@
 import React, {useEffect, useState} from 'react';
 import leftButton from '../../images/slider-icon/left-arrow-angle.png';
 import rightButton from '../../images/slider-icon/right-arrow-angle.png';
-import image from '../../images/slider-images/photo-1581093436589-a10193587f96.jpg';
 import './headerBanner.css';
 
 const HeaderBanner = () => {
 
-    const [sliderData, setSliderData] = useState([]);
+    const [slideData, setSlideData] = useState([]);
     const [slideIndex, setSlideIndex] = useState(0);
+    const [updateSlideData, setUpdateSlideData] = useState({});
+  
 
     useEffect(() => {
         fetch('/sliderData.json')
         .then((response) => response.json())
-        .then((data) => setSliderData(data))
+        .then((data) => setSlideData(data))
         .catch((error) => console.log(error.message))
     },[]);
 
     const handeRightButton = () => {
-        setSlideIndex(slideIndex + 1);
-        if(slideIndex === sliderData.length) {
-            setSlideIndex(0);
+        if(slideIndex < slideData.length - 1) {
+            setSlideIndex(slideIndex + 1)
+        }
+        else {
+            setSlideIndex(0)
         }
     }
 
     const handelLeftButton = () => {
-        setSlideIndex(slideIndex - 1);
-        if(slideIndex < 0 ) {
-            setSlideIndex(sliderData.length - 1); 
+        if(slideIndex > 0) {
+            setSlideIndex(slideIndex - 1)
+        }
+        else {
+            setSlideIndex(slideData.length - 1);
         }
         
-    } 
-    
+    }
 
-    
+    setInterval(() => {
+        if(slideIndex < slideData.length - 1) {
+            setSlideIndex(slideIndex + 1)
+        }
+        else {
+            setSlideIndex(0)
+        }
+    }, 5000);
+
+    useEffect(() => {
+        setUpdateSlideData(slideData[slideIndex]);
+    }, [slideData, slideIndex])    
 
 
     return (
        <div className="header-bottom">
            <div className="header-banner">
               <div className="header-banner-image">
-                  <img src={image} alt="" />
+                  <img src={updateSlideData?.imageUrl} alt="" />
               </div>
               <div className="header-banner-text">
                    <div className="banner-text-container">
-                        <h1>This is banner</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum saepe iste hic sunt officia! Expedita tempore natus maiores saepe maxime, ab non delectus, vel laboriosam quo, exercitationem numquam dolore sed.</p>
+                        <h1>{updateSlideData?.sliderTitle}</h1>
+                        <p>{updateSlideData?.sliderText}</p>
               </div>
                    </div>
               <div className="slide-change-button">

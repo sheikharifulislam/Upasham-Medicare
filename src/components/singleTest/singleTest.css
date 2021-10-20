@@ -82,3 +82,9 @@
   background-image: linear-gradient(to right, #f00ba4, tomato);
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+  .single-test {
+    width: 100%;
+  }
+}

@@ -9,6 +9,7 @@ const NavBar = () => {
 
     const history = useHistory();
     const [userInfoDisplay, setUserInfoDisplay] = useState('none');
+    const [mobileMenuDisplay, setMobileMenuDisplay] = useState('block');
 
     const showUserInfoBox = () => {      
        if(userInfoDisplay === 'none') {
@@ -23,15 +24,31 @@ const NavBar = () => {
         history.push('/acount');
     }
 
-    const [setIsLoading,logOut,user] = useAuth();
+    const {setIsLoading,logOut,user} = useAuth();
+   
 
-    const isgnOut = () => {
+    const signOut = () => {
+        setIsLoading(true);
         logOut()
         .then((result) => {
             user({});
+            history.push('/home');
         })
         .catch((error) => console.log(error.message))
-        .finally(() => setIsLoading(true));
+        .finally(() => setIsLoading(false));
+    }
+
+    const handelMobileMenu = () => {
+        if(mobileMenuDisplay === 'none') {
+            setMobileMenuDisplay('block');
+        }
+        else {
+            setMobileMenuDisplay('none');
+        }
+    } 
+
+    const styleMobileMenuDisplay = {
+        display: mobileMenuDisplay,
     }
 
     return (
@@ -41,7 +58,7 @@ const NavBar = () => {
                   <div className="logo">
                       <img src={logo} alt="Lab Logo" />
                   </div>
-                  <div className="menu">
+                  <div className="menu" style={styleMobileMenuDisplay}>
                       <nav>
                           <ul>
                               <li>
@@ -60,22 +77,27 @@ const NavBar = () => {
                                   <NavLink to="/about">about</NavLink>
                               </li>
                               <li>
-                                  <NavLink to="/login">login</NavLink>
+                                  <NavLink to="/register">register</NavLink>
                               </li>
                               <li>
-                                  <span className="user-icon" onClick={showUserInfoBox}><i class="fas fa-user"></i></span>
+                                    {
+                                        user.email &&
+                                        <span className="user-icon" onClick={showUserInfoBox}><i class="fas fa-user"></i></span>
+                                    }
                                   <div className="user-information" style={{display: userInfoDisplay}}>
                                       <ul>
                                           <li onClick={pushAcount}>Acount</li>
-                                          <li>log Out</li>
+                                          <li onClick={signOut}>log Out</li>
                                       </ul>
                                   </div>
-                              </li>
-                              <li>
-                                  <span className="response-menu-bar"><i class="fas fa-bars"></i></span>
-                              </li>
-                          </ul>
+                              </li>                             
+                          </ul>                          
                       </nav>
+                  </div>
+                  <div className="response-menu-bar">
+                        <li>
+                            <span><i class="fas fa-bars" onClick={handelMobileMenu}></i></span>
+                        </li>
                   </div>
               </div>
           </div>
