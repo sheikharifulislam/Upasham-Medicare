@@ -9,7 +9,7 @@ const SingleBlogs = (props) => {
         <section className="single-blog">
             <div className="single-blog-container">
                 <div className="single-blog-image">
-                    <img src={blogImage} alt="Service Image"/>
+                    <img src={blogImage} alt="BlogImage"/>
                 </div>
                 <div className="single-blog-name">
                     <h4>{blogName}</h4>
