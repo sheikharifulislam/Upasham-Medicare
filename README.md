@@ -1,6 +1,6 @@
 # upasham-medicare
 
-This project was bootstrapped with [Defodil-Technical-Institute](https://defodil-technical-institute.netlify.app/all-departments).
+This project was bootstrapped with [upasham-medicare](https://upasham-medicare.web.app).
 
 - It is a medical webiste
   <br/>
